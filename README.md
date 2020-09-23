@@ -1,3 +1,3 @@
 ## Project 
 
-GitHub job app.
+GitHub jobs app.
