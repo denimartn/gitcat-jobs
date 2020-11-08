@@ -4,6 +4,7 @@ import "./NavBar.js"
 import "./tailwind.output.css";
 import axios from "axios";
 import NavBar from "./NavBar.js";
+import Form from "./Form";
 function App() {
   const [jobs, setJobs] = useState([]);
   React.useEffect(() => {
@@ -23,7 +24,11 @@ function App() {
   });
 
   return (
+    <div>
  <NavBar/>
+<Form/>
+    </div>
+ 
   );
 }
 
