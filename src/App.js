@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "./NavBar.js";
-import "./tailwind.output.css";
+import "./index.css";
 import axios from "axios";
 import NavBar from "./NavBar.js";
 import Form from "./Form";
@@ -28,11 +28,11 @@ function App() {
   }, [jobs]);
 
   return (
-    <div>
+    <>
       <NavBar />
       <Form />
       <JobList />
-    </div>
+    </>
   );
 }
 
