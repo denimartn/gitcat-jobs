@@ -1,27 +1,23 @@
 import React from "react";
 
-function JobList() {
-    return(
-        <div className="px-32">
-            <div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 my-6 "'>
-
-                <div class="font-sans flex items-center justify-center bg-blue-darker w-full py-8">
-                <div class="overflow-hidden bg-white rounded w-full shadow-lg  leading-normal">
-                <div className="block group hover:bg-blue p-4 border-b">
-                        <p class="font-bold text-lg mb-1 text-black group-hover:text-white">Create from scratch</p>
-                        <p class="text-grey-darker mb-2 group-hover:text-white">Create a repository without any source code</p>
-                        </div>
-                        <div className="block group hover:bg-blue p-4 border-b">
-                        <p class="font-bold text-lg mb-1 text-black group-hover:text-white">Create from scratch</p>
-                        <p class="text-grey-darker mb-2 group-hover:text-white">Create a repository without any source code</p>
-                        </div>
-                </div>
-
-
-                </div>
+function JobList({ jobs }) {
+  console.log(jobs);
+  return (
+    <div className="sm:px-40 px-6">
+      <div class="shadow bg-white rounded flex flex-col cursor-pointer w-full border-gray-100 rounded-t border-b hover:bg-teal-100 mb-10">
+            <div class="flex w-full p-2 pl-2 border-transparent border-l-2 hover:border-teal-100 flex-col">
+                {jobs.map((job, index) => (
+                <button class="text-left mx-2 mt-4 mb-8" key={index}>
+                  {job.title}
+                  <div class="text-xs truncate w-full normal-case font-normal -mt-1 text-gray-500">
+                  {job.company}
+                  </div>
+                </button>
+                ))}
             </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
 
 export default JobList;

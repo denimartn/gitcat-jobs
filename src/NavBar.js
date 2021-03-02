@@ -2,7 +2,7 @@ import React from "react";
 function NavBar() {
   return (
     <div
-      classsName="w-full"
+      className="w-full"
       style={{ backgroundColor: "#24292e" }}
     >
       <div className="sm:px-40">

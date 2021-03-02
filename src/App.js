@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./NavBar.js";
 import "./index.css";
@@ -11,27 +11,26 @@ function App() {
   //description
   // location term
 
-  React.useEffect(() => {
-    async function fetchData() {
-      let res = await axios.get(
-        "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python"
-      );
-      console.log(res);
-      let newArr = [];
-      for (let job of res.data) {
-        newArr.push(job);
+  useEffect(() => {
+    async function fetcData() {
+      try {
+        let res = await axios.get(
+          "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python&location=usa"
+        );
+        console.log(res.data);
+        setJobs(res.data)
+      } catch {
+        console.log("error");
       }
-      setJobs(newArr);
     }
-    console.log(jobs);
-    fetchData();
-  }, [jobs]);
+    fetcData();
+  }, []);
 
   return (
     <>
       <NavBar />
       <Form />
-      <JobList />
+      <JobList jobs={jobs}/>
     </>
   );
 }
