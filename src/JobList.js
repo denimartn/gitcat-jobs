@@ -19,12 +19,12 @@ const onPassedDays = (date) => {
 
 function JobList({ jobs }) {
   return (
-    <div className="sm:px-40 px-6">
+    <div className="sm:px-60 px-6">
       <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-8">Featured job</h1>
-      <div class="flex flex-col cursor-pointer w-full mb-10">
-        <div class="flex w-full flex-col bg-white">
+      <div class="flex flex-col cursor-pointer w-full">
+        <div class="flex w-full flex-col bg-white divide-y ">
           {jobs.map((job, index) => (
-            <button class=" text-left p-4 mb-4 hover:bg-gray-50" key={index}>
+            <button class=" text-left p-4  hover:bg-gray-50 focus:outline-none" key={index}>
               <div className="flex sm:justify-between flex-col sm:flex-row">
                 <div className="mb-4">
                   <div className="mb-2">{job.title}</div>
@@ -36,10 +36,10 @@ function JobList({ jobs }) {
                   </div>
                 </div>
                 <div>
-                  <div class="mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500">
+                  <div class="mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500 sm:text-right">
                     {job.location}
                   </div>
-                  <div class="text-sm truncate w-full normal-case font-normal -mt-1 text-gray-500">
+                  <div class="text-sm truncate w-full normal-case font-normal -mt-1 text-gray-500 sm:text-right">
                     {onPassedDays(job.created_at)}
                   </div>
                 </div>

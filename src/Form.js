@@ -2,20 +2,20 @@ import React from "react";
 
 function Form() {
   return (
-    <form className="sm:px-40 my-16">
+    <form className="sm:px-60 my-16">
       <div className="flex sm:flex-row flex-col w-full">
-        <div className="sm:mr-6 px-6 sm:px-0">
+        <div className="sm:mr-6 px-6 sm:px-0 w-full">
           <label className="text-sm font-bold text-gray-900 tracking-tight">
             Job description
           </label>
           <input className="w-full mt-1 px-1 py-1 border rounded focus:outline-none focus:shadow-outline focus:border-blue-400" />
         </div>
-        <div className="sm:mr-6 px-6 sm:px-0">
+        <div className="sm:mr-6 px-6 sm:px-0 w-full">
           <label className="text-sm font-bold text-gray-900 tracking-tight">Location</label>
           <input className="w-full mt-1 px-1 py-1 border rounded focus:outline-none focus:shadow-outline focus:border-blue-400 " />
         </div>
 
-        <div className="flex sm:items-end flex-col sm:flex-row px-6 sm:px-0 w-full">
+        <div className="flex sm:items-end flex-col sm:flex-row px-6 sm:px-0 w-full justify-between">
           <div className="sm:mr-4 sm:ml-4 mb-6 mt-6 sm:mt-0 sm:mb-0 flex items-center">
             <span class="text-sm font-bold text-gray-900 tracking-tight mr-2 cursor-pointer">
               Full time only
