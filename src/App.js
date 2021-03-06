@@ -1,37 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import "./NavBar.js";
 import "./index.css";
-import axios from "axios";
 import NavBar from "./NavBar.js";
-import Form from "./Form";
-import JobList from "./JobList";
+import JobSearch from "./JobSearch";
+import JobDetail from "./JobDetail";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 function App() {
-  const [jobs, setJobs] = useState([]);
-  //description
-  // location term
-
-  useEffect(() => {
-    async function fetcData() {
-      try {
-        let res = await axios.get(
-          "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python"
-        );
-        console.log(res.data);
-        setJobs(res.data)
-      } catch {
-        console.log("error");
-      }
-    }
-    fetcData();
-  }, []);
-
   return (
-    <>
-      <NavBar />
-      <Form />
-      <JobList jobs={jobs}/>
-    </>
+    <Router>
+        <NavBar />
+      <Switch>
+        <Route path="/job/:id" children={<JobDetail />} />
+        <Route path="/" children={<JobSearch />} />
+      </Switch>
+    </Router>
   );
 }
 
