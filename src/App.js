@@ -15,7 +15,7 @@ function App() {
     async function fetcData() {
       try {
         let res = await axios.get(
-          "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python&location=usa"
+          "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python"
         );
         console.log(res.data);
         setJobs(res.data)
