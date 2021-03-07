@@ -25,7 +25,7 @@ function JobDetail({ jobs }) {
       <Link to="/">
         <button className="flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-green-500 text-white font-bold px-2 py-1 rounded-md mb-8">
           <svg
-          className="w-6 mr-2"
+            className="w-6 mr-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -36,10 +36,7 @@ function JobDetail({ jobs }) {
               clipRule="evenodd"
             />
           </svg>
-          <div>
-
-          See all positions
-          </div>
+          <div>See all positions</div>
         </button>
       </Link>
       <div className="flex w-full flex-col bg-white p-4 sm:p-8">
@@ -52,11 +49,11 @@ function JobDetail({ jobs }) {
               {job.type}
             </div>
           </div>
-          <div>
+          <div className="ml-2">
             <div className="text-right mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500">
               {job.company}
             </div>
-            <img src={job.company_logo} alt="company logo" />
+            <img className="w-20" src={job.company_logo} alt="company logo" />
           </div>
           <hr />
         </div>
@@ -66,6 +63,7 @@ function JobDetail({ jobs }) {
           </div>
           <div
             className="text-gray-500 text-lg"
+            style={{ overflowWrap: "break-word" }}
             dangerouslySetInnerHTML={{ __html: job.description }}
           ></div>
         </div>
@@ -75,6 +73,7 @@ function JobDetail({ jobs }) {
           </div>
           <div
             className="text-gray-500 text-sm"
+            style={{ overflowWrap: "break-word" }}
             dangerouslySetInnerHTML={{ __html: job.how_to_apply }}
           ></div>
         </div>
