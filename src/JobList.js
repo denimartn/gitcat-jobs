@@ -50,7 +50,7 @@ function JobList({ jobs, state }) {
                   <div className="flex sm:justify-between flex-col sm:flex-row">
                     <div className="mb-4">
                       <div className="mb-2">{job.title}</div>
-                      <div class="mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500">
+                      <div className="mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500">
                         {job.company}
                       </div>
                       <div className="text-sm truncate w-full -mt-1 text-green-500 font-bold">
