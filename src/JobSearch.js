@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Form from "./Form";
 import JobList from "./JobList";
 import axios from "axios";
-import ClipLoader from "react-spinners/ClipLoader";
+import SyncLoader from "react-spinners/SyncLoader";
+import { isEmpty } from "lodash";
 
 const JobSearch = () => {
   const [jobs, setJobs] = useState([]);
@@ -15,7 +16,6 @@ const JobSearch = () => {
         let res = await axios.get(
           "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python"
         );
-        console.log(res.data);
         setState("ready");
         setJobs(res.data);
       } catch {
@@ -25,17 +25,39 @@ const JobSearch = () => {
     fetcData();
   }, []);
 
-
-const onSubmit = values => {
-  console.log(values)
-}
+  async function onSubmit(values) {
+    try {
+      setState("loading");
+      let res = await axios.get(
+        ` https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=${values.job}&full_time=${values.isFullTime}&location=${values.location}`
+      );
+      if (isEmpty(res.data)) {
+        setState("empty");
+      } else {
+        setState("ready");
+      }
+      setJobs(res.data);
+    } catch {
+      setState("error");
+    }
+  }
 
   return (
     <>
-      <Form onSubmit={onSubmit}/>
+      <Form onSubmit={onSubmit} />
       {state === "loading" && (
-        <div className="flex justify-center mt-44">
-          <ClipLoader color={"#10b981"} size={150} />
+        <div className="flex justify-center mt-28">
+          <SyncLoader color={"#4f46e5"} />
+        </div>
+      )}
+      {state === "empty" && (
+        <div className="flex justify-center mt-28">
+          <div className="flex flex-col">
+            <img src="/assets/illustration/no-result.png" className="mb-4" />
+            <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight uppercase text-center">
+              no jobs founded
+            </h1>
+          </div>
         </div>
       )}
       {state === "ready" && <JobList jobs={jobs} state={state} />}

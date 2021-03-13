@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import ClipLoader from "react-spinners/ClipLoader";
+import SyncLoader from "react-spinners/SyncLoader";
+import JobDetailCss from './JobDetailCss.css'
+
 
 function JobDetail({ jobs }) {
   const [job, setJob] = useState("");
@@ -27,16 +29,16 @@ function JobDetail({ jobs }) {
   }, [id]);
 
   return (
-    <div className="sm:px-60 px-6 my-16">
-      {state === "loading" && (
-        <div className="flex justify-center mt-44">
-          <ClipLoader color={"#10b981"} size={150} />
+    <div className="sm:px-60 px-2 my-16">
+        {state === "loading" && (
+        <div className="flex justify-center mt-28">
+          <SyncLoader color={"#4f46e5"} />
         </div>
       )}
       {state === "ready" && (
         <>
           <Link to="/">
-            <button className="flex transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-green-500 text-white font-bold px-2 py-1 rounded-md mb-8">
+            <button className="flex transform hover:-translate-y-1 hover:scale-110 bg-green-500 text-white font-bold px-2 py-1 rounded-md mb-8">
               <svg
                 className="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +55,7 @@ function JobDetail({ jobs }) {
             </button>
           </Link>
           <div className="flex w-full flex-col bg-white p-4 sm:p-8">
-            <div className="mb-8 flex sm:justify-between w-full">
+            <div className="mb-8 flex flex-col sm:flex-row sm:justify-between w-full">
               <div className="w-full">
                 <div className="text-2xl font-extrabold text-gray-900 tracking-tight mb-4">
                   {job.title}
@@ -62,8 +64,8 @@ function JobDetail({ jobs }) {
                   {job.type}
                 </div>
               </div>
-              <div className="ml-2">
-                <div className="text-right mb-2 text-md truncate w-full normal-case font-normal -mt-1 text-gray-500">
+              <div className="sm:ml-2 flex sm:block mb-4 sm:mb-0">
+                <div className="sm:text-right self-center sm:self-auto mb-2 truncate w-full text-gray-500">
                   {job.company}
                 </div>
                 <img
@@ -89,7 +91,6 @@ function JobDetail({ jobs }) {
                 Apply now 👇
               </div>
               <div
-                className="text-gray-500 text-sm"
                 style={{ overflowWrap: "break-word" }}
                 dangerouslySetInnerHTML={{ __html: job.how_to_apply }}
               ></div>

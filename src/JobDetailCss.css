@@ -1,0 +1,36 @@
+h1 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827
+}
+
+p {
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none; 
+}
+
+li::before {
+  content: "•";
+  color: #10B981;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: medium;
+    padding: 10px
+}
+

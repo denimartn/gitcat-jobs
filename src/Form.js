@@ -34,6 +34,7 @@ function Form(props) {
             className="w-full mt-1 px-1 py-1 border rounded focus:outline-none focus:shadow-outline focus:border-blue-400"
             onChange={handleJobChange}
             name="job"
+            placeholder="JavaScript, Python, Ruby..."
           />
         </div>
         <div className="sm:mr-6 px-6 sm:px-0 w-full">
@@ -45,12 +46,13 @@ function Form(props) {
             className="w-full mt-1 px-1 py-1 border rounded focus:outline-none focus:shadow-outline focus:border-blue-400"
             onChange={handleLocationChange}
             name="location"
+            placeholder="New York, Canada..."
           />
         </div>
 
         <div className="flex sm:items-end flex-col sm:flex-row px-6 sm:px-0 w-full justify-between">
           <div className="sm:mr-4 sm:ml-4 mb-6 mt-6 sm:mt-0 sm:mb-0 flex items-center">
-            <span class="text-sm font-bold text-gray-900 tracking-tight mr-2 cursor-pointer">
+            <span className="text-sm font-bold text-gray-900 tracking-tight mr-2">
               Full time only
             </span>
             <input
