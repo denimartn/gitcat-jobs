@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Form from "./Form";
 import JobList from "./JobList";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const JobSearch = () => {
   const [jobs, setJobs] = useState([]);
@@ -19,16 +20,25 @@ const JobSearch = () => {
         setJobs(res.data);
       } catch {
         setState("error");
-        console.log("error");
       }
     }
     fetcData();
   }, []);
 
+
+const onSubmit = values => {
+  console.log(values)
+}
+
   return (
     <>
-      <Form />
-      <JobList jobs={jobs} state={state} />
+      <Form onSubmit={onSubmit}/>
+      {state === "loading" && (
+        <div className="flex justify-center mt-44">
+          <ClipLoader color={"#10b981"} size={150} />
+        </div>
+      )}
+      {state === "ready" && <JobList jobs={jobs} state={state} />}
     </>
   );
 };

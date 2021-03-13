@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
-import ClipLoader from "react-spinners/ClipLoader";
+
 
 const onPassedDays = (date) => {
   const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
@@ -30,12 +30,7 @@ function JobList({ jobs, state }) {
 
   return (
     <div className="sm:px-60 px-6">
-       {state === "loading" && (
-        <div className="flex justify-center mt-44">
-          <ClipLoader color={"#10b981"} size={150} />
-        </div>
-      )}
-      {state === "ready" && (
+     
         <>
           <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-8">
             Featured job
@@ -72,7 +67,6 @@ function JobList({ jobs, state }) {
             </div>
           </div>
         </>
-      )}
     </div>
   );
 }
