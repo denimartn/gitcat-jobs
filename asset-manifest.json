@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gitcat-jobs/static/css/main.820c098f.chunk.css",
+    "main.js": "/gitcat-jobs/static/js/main.dcfdbe1e.chunk.js",
+    "main.js.map": "/gitcat-jobs/static/js/main.dcfdbe1e.chunk.js.map",
+    "runtime-main.js": "/gitcat-jobs/static/js/runtime-main.ee27ba47.js",
+    "runtime-main.js.map": "/gitcat-jobs/static/js/runtime-main.ee27ba47.js.map",
+    "static/js/2.7e928cdc.chunk.js": "/gitcat-jobs/static/js/2.7e928cdc.chunk.js",
+    "static/js/2.7e928cdc.chunk.js.map": "/gitcat-jobs/static/js/2.7e928cdc.chunk.js.map",
+    "index.html": "/gitcat-jobs/index.html",
+    "static/css/main.820c098f.chunk.css.map": "/gitcat-jobs/static/css/main.820c098f.chunk.css.map",
+    "static/js/2.7e928cdc.chunk.js.LICENSE.txt": "/gitcat-jobs/static/js/2.7e928cdc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee27ba47.js",
+    "static/js/2.7e928cdc.chunk.js",
+    "static/css/main.820c098f.chunk.css",
+    "static/js/main.dcfdbe1e.chunk.js"
+  ]
+}
