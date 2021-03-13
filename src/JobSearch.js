@@ -14,7 +14,7 @@ const JobSearch = () => {
       try {
         setState("loading");
         let res = await axios.get(
-          "https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=python"
+          "https://cors-denise.herokuapp.com/https://jobs.github.com/positions.json?description=python"
         );
         setState("ready");
         setJobs(res.data);
@@ -29,7 +29,7 @@ const JobSearch = () => {
     try {
       setState("loading");
       let res = await axios.get(
-        ` https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json?description=${values.job}&full_time=${values.isFullTime}&location=${values.location}`
+        ` https://cors-denise.herokuapp.com/https://jobs.github.com/positions.json?description=${values.job}&full_time=${values.isFullTime}&location=${values.location}`
       );
       if (isEmpty(res.data)) {
         setState("empty");

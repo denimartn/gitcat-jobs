@@ -16,7 +16,7 @@ function JobDetail({ jobs }) {
       try {
         setState("loading");
         let res = await axios.get(
-          `https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions/${id}.json`
+          `https://cors-denise.herokuapp.com/https://jobs.github.com/positions/${id}.json`
         );
         setState("ready");
         setJob(res.data);
