@@ -53,7 +53,7 @@ const JobSearch = () => {
       {state === "empty" && (
         <div className="flex justify-center mt-28">
           <div className="flex flex-col">
-            <img src="/assets/illustration/no-result.png" className="mb-4" />
+            <img src="/assets/illustration/no-result.png" alt="cat" className="mb-4" />
             <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight uppercase text-center">
               no jobs founded
             </h1>
