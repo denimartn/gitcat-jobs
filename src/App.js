@@ -5,12 +5,12 @@ import "./index.css";
 import NavBar from "./NavBar.js";
 import JobSearch from "./JobSearch";
 import JobDetail from "./JobDetail";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-        <NavBar />
+      <NavBar />
       <Switch>
         <Route path="/job/:id" children={<JobDetail />} />
         <Route path="/" children={<JobSearch />} />
