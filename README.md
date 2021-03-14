@@ -28,3 +28,11 @@ Users can:
 
 ## Screenshot
 
+
+# smartphone view
+
+[![gicat-1.png](https://i.postimg.cc/43jGQwKZ/gicat-1.png)](https://postimg.cc/KK7CZPrs)
+
+[![gicat-2.png](https://i.postimg.cc/hj3drkLv/gicat-2.png)](https://postimg.cc/N9mFGPPv)
+
+# laptop view
