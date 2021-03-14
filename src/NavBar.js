@@ -7,7 +7,7 @@ function NavBar() {
     >
       <div className="sm:px-60 flex items-center">
         <img className="w-14 p-2 mr-4" src={process.env.PUBLIC_URL + "/assets/illustration/logo.png"} alt="gitcat logo" />
-       <div className="text-md text-purple-100 font-extrabold">Gitcat Jobs</div> 
+       <div className="text-md text-purple-100 font-extrabold font-inter">Gitcat Jobs</div> 
       </div>
     </div>
   );

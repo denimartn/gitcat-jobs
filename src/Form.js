@@ -31,7 +31,7 @@ function Form(props) {
           </label>
           <input
             type="text"
-            className="w-full mt-1 p-2  rounded focus:outline-none focus:border-green-500 focus:ring-green-500 outline-none"
+            className="w-full mt-1 p-2  rounded focus:outline-none focus:border-green-500 border-gray-300 focus:ring-green-500 outline-none"
             onChange={handleJobChange}
             name="job"
             placeholder="JavaScript, Python, Ruby..."
@@ -43,7 +43,7 @@ function Form(props) {
           </label>
           <input
             type="text"
-            className="w-full mt-1 p-2 rounded focus:border-green-500 focus:ring-green-500 outline-none"
+            className="w-full mt-1 p-2 rounded focus:border-green-500 focus:ring-green-500 outline-none border-gray-300"
             onChange={handleLocationChange}
             name="location"
             placeholder="New York, Canada..."
@@ -57,7 +57,7 @@ function Form(props) {
             </span>
             <input
               type="checkbox"
-              className="h-5 w-5 cursor-pointer text-green-500 rounded focus:ring-green-500"
+              className="h-5 w-5 cursor-pointer text-green-500 rounded focus:ring-green-500 border-gray-300"
               onClick={handleFullTime}
             />
           </div>

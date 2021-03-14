@@ -38,7 +38,7 @@ function JobDetail({ jobs }) {
       {state === "ready" && (
         <>
           <Link to="/">
-            <button className="flex transform hover:-translate-y-1 hover:scale-110 bg-green-500 text-white font-bold px-2 py-1 rounded-md mb-8">
+            <button className="flex bg-green-500 text-white font-bold px-2 py-1 rounded-md mb-8 shadow-sm hover:bg-green-500 focus:outline-none focus:shadow-outline-green active:bg-green-500">
               <svg
                 className="w-6 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
