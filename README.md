@@ -31,6 +31,6 @@ Users can:
 
 ### smartphone view
 
-[![gicat-1.png](https://i.postimg.cc/43jGQwKZ/gicat-1.png)](https://postimg.cc/KK7CZPrs) [![gitcat-3.png](https://i.postimg.cc/nzZZC2CL/gitcat-3.png)](https://postimg.cc/JyTSFb3w)
+[![gicat-1.png](https://i.postimg.cc/43jGQwKZ/gicat-1.png)](https://postimg.cc/KK7CZPrs) [![gitcat-4.png](https://i.postimg.cc/7LB8Z48K/gitcat-4.png)](https://postimg.cc/hJ732HGm)
 
 ### laptop view
