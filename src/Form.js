@@ -63,7 +63,7 @@ function Form(props) {
           </div>
           <button
             type="submit"
-            className="text-lg py-2 px-2 rounded-md font-bold leading-5 text-white bg-indigo-600 shadow-sm hover:bg-indigo-500 focus:outline-none focus:shadow-outline-blue active:bg-indigo-600"
+            className="text-lg py-2 px-2 rounded-md font-bold leading-5 text-white bg-green-500 shadow-sm hover:bg-green-500 focus:outline-none focus:shadow-outline-green active:bg-green-500"
           >
             Search
           </button>

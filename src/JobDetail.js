@@ -32,7 +32,7 @@ function JobDetail({ jobs }) {
     <div className="sm:px-60 px-2 my-16">
         {state === "loading" && (
         <div className="flex justify-center mt-28">
-          <SyncLoader color={"#4f46e5"} />
+          <SyncLoader color={"#10B981"} />
         </div>
       )}
       {state === "ready" && (

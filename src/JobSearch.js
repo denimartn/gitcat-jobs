@@ -47,7 +47,7 @@ const JobSearch = () => {
       <Form onSubmit={onSubmit} />
       {state === "loading" && (
         <div className="flex justify-center mt-28">
-          <SyncLoader color={"#4f46e5"} />
+          <SyncLoader color={"#10B981"} />
         </div>
       )}
       {state === "empty" && (
