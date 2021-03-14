@@ -29,7 +29,7 @@ Users can:
 ## Screenshot
 
 
-# smartphone view
+### smartphone view
 
 [![gicat-1.png](https://i.postimg.cc/43jGQwKZ/gicat-1.png)](https://postimg.cc/KK7CZPrs)
 
