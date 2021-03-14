@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/gitcat-jobs/static/css/main.54388685.chunk.css",
-    "main.js": "/gitcat-jobs/static/js/main.ed3619f6.chunk.js",
-    "main.js.map": "/gitcat-jobs/static/js/main.ed3619f6.chunk.js.map",
+    "main.css": "/gitcat-jobs/static/css/main.ea7a2019.chunk.css",
+    "main.js": "/gitcat-jobs/static/js/main.c62f6bd2.chunk.js",
+    "main.js.map": "/gitcat-jobs/static/js/main.c62f6bd2.chunk.js.map",
     "runtime-main.js": "/gitcat-jobs/static/js/runtime-main.ee27ba47.js",
     "runtime-main.js.map": "/gitcat-jobs/static/js/runtime-main.ee27ba47.js.map",
     "static/js/2.25c8f08e.chunk.js": "/gitcat-jobs/static/js/2.25c8f08e.chunk.js",
     "static/js/2.25c8f08e.chunk.js.map": "/gitcat-jobs/static/js/2.25c8f08e.chunk.js.map",
     "index.html": "/gitcat-jobs/index.html",
-    "static/css/main.54388685.chunk.css.map": "/gitcat-jobs/static/css/main.54388685.chunk.css.map",
+    "static/css/main.ea7a2019.chunk.css.map": "/gitcat-jobs/static/css/main.ea7a2019.chunk.css.map",
     "static/js/2.25c8f08e.chunk.js.LICENSE.txt": "/gitcat-jobs/static/js/2.25c8f08e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ee27ba47.js",
     "static/js/2.25c8f08e.chunk.js",
-    "static/css/main.54388685.chunk.css",
-    "static/js/main.ed3619f6.chunk.js"
+    "static/css/main.ea7a2019.chunk.css",
+    "static/js/main.c62f6bd2.chunk.js"
   ]
 }
