@@ -1,7 +1,3 @@
-## Project 
-
-GitCat jobs app.
-
 ## Project
 
 Job listing app.
