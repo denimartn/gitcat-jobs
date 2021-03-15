@@ -55,7 +55,7 @@ const JobSearch = () => {
           <div className="flex flex-col">
             <img src={process.env.PUBLIC_URL + "/assets/illustration/no-result.png"} alt="cat" className="mb-4" />
             <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight uppercase text-center">
-              no jobs founded
+              no jobs found
             </h1>
           </div>
         </div>
