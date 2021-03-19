@@ -24,5 +24,4 @@ Users can:
 
 ## Screenshot
 
-
-![gicat-1.png](https://i.postimg.cc/43jGQwKZ/gicat-1.png) ![IMG-20210319-104137.jpg](https://i.postimg.cc/hPrQsL0D/IMG-20210319-104137.jpg)
+![IMG-20210319-104535.jpg](https://i.postimg.cc/Df57YBRM/IMG-20210319-104535.jpg) ![IMG-20210319-104137.jpg](https://i.postimg.cc/hPrQsL0D/IMG-20210319-104137.jpg)
